@@ -1,0 +1,49 @@
+{
+  "name": "Transaction",
+  "plural": "Transaction",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "paymentStatus": {
+      "type": "string"
+    },
+    "paymentTime": {
+      "type": "date"
+    },
+    "confirmStatus": {
+      "type": "string"
+    },
+    "sentAt": {
+      "type": "date"
+    },
+    "confirmAt": {
+      "type": "date"
+    },
+    "receivedAt": {
+      "type": "date"
+    },
+    "receiverName": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "totalPrice": {
+      "type": "number"
+    },
+    "quantity": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
